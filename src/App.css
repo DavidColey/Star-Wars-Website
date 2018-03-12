@@ -22,6 +22,30 @@
   font-size: large;
 }
 
+.buttonformat {
+  padding: 36px 48px;
+  border-radius: 12px;
+  background-color: rgb(245, 218, 23);
+  margin-top: 25%;
+}
+.buttonformat:hover {
+  background-color: rgb(251, 254, 101);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 240px 240px 240px;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.grid-item {
+  border: 1px solid rgb(11, 255, 105);
+  /* padding: 60px; */
+  font-size: 30px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

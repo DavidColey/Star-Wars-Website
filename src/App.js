@@ -5,7 +5,7 @@ import "./App.css";
 
 class App extends Component {
   render() {
-    fetch("https://swapi.co/api/people/1")
+    fetch("https://swapi.co/api/planets/1")
       .then(resp => resp.json())
       .then(data => console.log(data.name));
 
@@ -15,6 +15,98 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
+        <div className="grid-container">
+          <div className="grid-item">
+            <button
+              className="buttonformat"
+              title="Learn More"
+              color="#841584"
+              //accessibilityLabel="Learn more about this purple button"
+            >
+              Button
+            </button>
+          </div>
+          <div className="grid-item">
+            <button
+              className="buttonformat"
+              title="Learn More"
+              color="#841584"
+              //accessibilityLabel="Learn more about this purple button"
+            >
+              Button
+            </button>
+          </div>
+          <div className="grid-item">
+            <button
+              className="buttonformat"
+              title="Learn More"
+              color="#841584"
+              //accessibilityLabel="Learn more about this purple button"
+            >
+              Button
+            </button>
+          </div>
+          <div className="grid-item">
+            <button
+              className="buttonformat"
+              title="Learn More"
+              color="#841584"
+              //accessibilityLabel="Learn more about this purple button"
+            >
+              Button
+            </button>
+          </div>
+          <div className="grid-item">
+            <button
+              className="buttonformat"
+              title="Learn More"
+              color="#841584"
+              //accessibilityLabel="Learn more about this purple button"
+            >
+              Button
+            </button>
+          </div>
+          <div className="grid-item">
+            <button
+              className="buttonformat"
+              title="Learn More"
+              color="#841584"
+              //accessibilityLabel="Learn more about this purple button"
+            >
+              Button
+            </button>
+          </div>
+          <div className="grid-item">
+            <button
+              className="buttonformat"
+              title="Learn More"
+              color="#841584"
+              //accessibilityLabel="Learn more about this purple button"
+            >
+              Button
+            </button>
+          </div>
+          <div className="grid-item">
+            <button
+              className="buttonformat"
+              title="Learn More"
+              color="#841584"
+              //accessibilityLabel="Learn more about this purple button"
+            >
+              Button
+            </button>
+          </div>
+          <div className="grid-item">
+            <button
+              className="buttonformat"
+              title="Learn More"
+              color="#841584"
+              //accessibilityLabel="Learn more about this purple button"
+            >
+              Button
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
