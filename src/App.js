@@ -23,7 +23,18 @@ class App extends Component {
               color="#841584"
               //accessibilityLabel="Learn more about this purple button"
             >
-              Button
+              Episode I: The Phantom Menance
+            </button>
+          </div>
+          <div className="grid-item" />
+          <div className="grid-item">
+            <button
+              className="buttonformat"
+              title="Learn More"
+              color="#841584"
+              //accessibilityLabel="Learn more about this purple button"
+            >
+              Episode II: Attack of the Clones
             </button>
           </div>
           <div className="grid-item">
@@ -33,7 +44,7 @@ class App extends Component {
               color="#841584"
               //accessibilityLabel="Learn more about this purple button"
             >
-              Button
+              Episode III: Revenge of the Sith
             </button>
           </div>
           <div className="grid-item">
@@ -43,7 +54,7 @@ class App extends Component {
               color="#841584"
               //accessibilityLabel="Learn more about this purple button"
             >
-              Button
+              Episode IV: A New Hope
             </button>
           </div>
           <div className="grid-item">
@@ -53,7 +64,7 @@ class App extends Component {
               color="#841584"
               //accessibilityLabel="Learn more about this purple button"
             >
-              Button
+              Episode V: The Empire Strikes Back
             </button>
           </div>
           <div className="grid-item">
@@ -63,9 +74,10 @@ class App extends Component {
               color="#841584"
               //accessibilityLabel="Learn more about this purple button"
             >
-              Button
+              Episode VI: A New Hope
             </button>
           </div>
+          <div className="grid-item" />
           <div className="grid-item">
             <button
               className="buttonformat"
@@ -73,37 +85,7 @@ class App extends Component {
               color="#841584"
               //accessibilityLabel="Learn more about this purple button"
             >
-              Button
-            </button>
-          </div>
-          <div className="grid-item">
-            <button
-              className="buttonformat"
-              title="Learn More"
-              color="#841584"
-              //accessibilityLabel="Learn more about this purple button"
-            >
-              Button
-            </button>
-          </div>
-          <div className="grid-item">
-            <button
-              className="buttonformat"
-              title="Learn More"
-              color="#841584"
-              //accessibilityLabel="Learn more about this purple button"
-            >
-              Button
-            </button>
-          </div>
-          <div className="grid-item">
-            <button
-              className="buttonformat"
-              title="Learn More"
-              color="#841584"
-              //accessibilityLabel="Learn more about this purple button"
-            >
-              Button
+              Episode VII: The Force Awakens
             </button>
           </div>
         </div>
