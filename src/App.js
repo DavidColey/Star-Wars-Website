@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from "./Home";
+import Films from "./Films";
+
 //import { Button } from 'react-native';
 
 class App extends Component {
@@ -15,80 +19,12 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <div className="grid-container">
-          <div className="grid-item">
-            <button
-              className="buttonformat"
-              title="Learn More"
-              color="#841584"
-              //accessibilityLabel="Learn more about this purple button"
-            >
-              Episode I: The Phantom Menance
-            </button>
+        <Router>
+          <div>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/films" component={Films} />
           </div>
-          <div className="grid-item" />
-          <div className="grid-item">
-            <button
-              className="buttonformat"
-              title="Learn More"
-              color="#841584"
-              //accessibilityLabel="Learn more about this purple button"
-            >
-              Episode II: Attack of the Clones
-            </button>
-          </div>
-          <div className="grid-item">
-            <button
-              className="buttonformat"
-              title="Learn More"
-              color="#841584"
-              //accessibilityLabel="Learn more about this purple button"
-            >
-              Episode III: Revenge of the Sith
-            </button>
-          </div>
-          <div className="grid-item">
-            <button
-              className="buttonformat"
-              title="Learn More"
-              color="#841584"
-              //accessibilityLabel="Learn more about this purple button"
-            >
-              Episode IV: A New Hope
-            </button>
-          </div>
-          <div className="grid-item">
-            <button
-              className="buttonformat"
-              title="Learn More"
-              color="#841584"
-              //accessibilityLabel="Learn more about this purple button"
-            >
-              Episode V: The Empire Strikes Back
-            </button>
-          </div>
-          <div className="grid-item">
-            <button
-              className="buttonformat"
-              title="Learn More"
-              color="#841584"
-              //accessibilityLabel="Learn more about this purple button"
-            >
-              Episode VI: A New Hope
-            </button>
-          </div>
-          <div className="grid-item" />
-          <div className="grid-item">
-            <button
-              className="buttonformat"
-              title="Learn More"
-              color="#841584"
-              //accessibilityLabel="Learn more about this purple button"
-            >
-              Episode VII: The Force Awakens
-            </button>
-          </div>
-        </div>
+        </Router>
       </div>
     );
   }
