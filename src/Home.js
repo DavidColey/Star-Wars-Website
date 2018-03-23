@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Home = () => (
   <div className="grid-container">
     <div className="grid-item">
-      <Link to="/film">
+      <Link to="/films">
         <button className="buttonformat" title="Learn More" color="#841584">
           {" "}
           Episode I: The Phantom Menance
@@ -59,7 +59,7 @@ const Home = () => (
         color="#841584"
         //accessibilityLabel="Learn more about this purple button"
       >
-        Episode VI: A New Hope
+        Episode VI: Return of the Jedi
       </button>
     </div>
     <div className="grid-item" />
