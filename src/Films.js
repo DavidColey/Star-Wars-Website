@@ -3,6 +3,11 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import SideNav, { Nav, NavIcon, NavText } from "react-sidenav";
 import "./Films.css";
 import { Link } from "react-router-dom";
+import demo from "./pics/demo.jpg";
+
+/* function image() {
+  return <img src={"../src/pics/demo.jpg"} width="640" height="360" />;
+} */
 
 const Films = () => (
   <div>
@@ -76,7 +81,7 @@ const Films = () => (
       </SideNav>
     </div>
     <div>
-      <img src="pics/demo.jpg" width="640" height="360" />
+      <img src={demo} width="640" height="360" />
     </div>
   </div>
 );
