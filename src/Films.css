@@ -1,25 +1,44 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
 .rightnav {
   background: #2c3e50;
   color: #fff;
-  width: 220px;
-  position: absolute;
-  top: 190px;
-  right: 0px;
+  width: 10%;
+  height: 10%;
 }
 
 .leftnav {
   background: #2c3e50;
   color: #fff;
-  width: 220px;
-  position: absolute;
-  top: 190px;
-  left: 0px;
+  width: 10%;
+  height: 10%;
 }
 
-.opencrawl {
+.middle {
+  width: 100%;
+  justify-content: center;
+}
+
+.middle .opencrawl {
   color: yellow;
-  position: absolute;
-  height: 400px;
-  width: 400px;
-  left: 40%;
+  width: 40%;
+  padding-left: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+
+  .leftnav {
+    width: 100%;
+  }
+
+  .rightnav {
+    width: 100%;
+  }
 }

@@ -21,7 +21,7 @@ class Films extends Component {
 
   render() {
     return (
-      <div>
+      <div className="mainContainer">
         <div className="leftnav">
           <SideNav
             highlightColor="#E91E63"
@@ -64,6 +64,15 @@ class Films extends Component {
           </SideNav>
         </div>
 
+        <div className="middle">
+          <div>
+            <img src={demo} width="640" height="360" />
+          </div>
+          <div className="middle opencrawl">
+            <text>{this.state && this.state.films.opening_crawl}</text>
+          </div>
+        </div>
+
         <div className="rightnav">
           <SideNav
             highlightColor="#E91E63"
@@ -90,12 +99,6 @@ class Films extends Component {
               <NavText> Species </NavText>
             </Nav>
           </SideNav>
-        </div>
-        <div>
-          <img src={demo} width="640" height="360" />
-        </div>
-        <div className="opencrawl">
-          <text>{this.state && this.state.films.opening_crawl}</text>
         </div>
       </div>
     );
