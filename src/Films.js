@@ -22,6 +22,14 @@ class Films extends Component {
   render() {
     return (
       <div className="mainContainer">
+        {/* <Route path="/:id" component={Child} /> */}
+        {/* const Child = ({match}) => {
+      <div>
+        <h3>ID: {match.params.id}</h3>
+      </div>
+          }; */}
+        {/* https://reacttraining.com/react-router/web/example/url-params */}
+
         <div className="leftnav">
           <SideNav
             highlightColor="#E91E63"
