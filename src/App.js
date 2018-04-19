@@ -21,13 +21,7 @@ class App extends Component {
         </header> */}
         <Router>
           <div>
-            <Route exact path="/ep1" component={Films} />
-            <Route exact path="/ep2" component={Films} />
-            <Route exact path="/ep3" component={Films} />
-            <Route exact path="/ep4" component={Films} />
-            <Route exact path="/ep5" component={Films} />
-            <Route exact path="/ep6" component={Films} />
-            <Route exact path="/ep7" component={Films} />
+            <Route exact path="/:movieId" component={Films} />
             <Route exact path="/" component={Home} />
           </div>
         </Router>
