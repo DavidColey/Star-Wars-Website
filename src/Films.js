@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import SideNav, { Nav, NavIcon, NavText } from "react-sidenav";
+import { slide as Menu } from "react-burger-menu";
 import "./Films.css";
-import { Link } from "react-router-dom";
 import ep1 from "./pics/Episode I.jpg";
 import ep2 from "./pics/Episode II.jpg";
 import ep3 from "./pics/Episode III.jpg";
@@ -85,8 +85,35 @@ class Films extends Component {
     return (
       <div className="mainContainer">
         {/* https://reacttraining.com/react-router/web/example/url-params */}
-        <div className="leftnav">
-          <SideNav
+
+        <Menu
+          className="menu"
+          customBurgerIcon={<img src="pics/menu-icon.png" />}
+        >
+          <a id="ep1" className="menu-item" href="/ep1">
+            Episode I: The Phantom Menance
+          </a>
+          <a id="ep2" className="menu-item" href="/ep2">
+            Episode II: Attack of the Clones
+          </a>
+          <a id="ep3" className="menu-item" href="/ep3">
+            Episode III: Revenge of the Sith
+          </a>
+          <a id="ep4" className="menu-item" href="/ep4">
+            Episode IV: A New Hope
+          </a>
+          <a id="ep5" className="menu-item" href="/ep5">
+            Episode V: The Empire Strikes Back
+          </a>
+          <a id="ep6" className="menu-item" href="/ep6">
+            Episode VI: Return of the Jedi
+          </a>
+          <a id="ep7" className="menu-item" href="/ep7">
+            Episode VII: The Force Awakens
+          </a>
+        </Menu>
+
+        {/* <SideNav
             highlightColor="#E91E63"
             highlightBgColor="#00bcd4"
             //defaultSelected="sales"
@@ -98,34 +125,48 @@ class Films extends Component {
             </Nav>
 
             <Nav id="Episode I">
-              <NavText> Episode I: The Phantom Menance </NavText>
+              <NavText>
+                <Link to="/ep1">Episode I: The Phantom Menance</Link>
+              </NavText>
             </Nav>
 
             <Nav id="Episode II">
-              <NavText> Episode II: Attack of the Clones </NavText>
+              <NavText>
+                <Link to="/ep2">Episode II: Attack of the Clones </Link>
+              </NavText>
             </Nav>
 
             <Nav id="Episode III">
-              <NavText> Episode III: Revenge of the Sith </NavText>
+              <NavText>
+                <Link to="/ep3">Episode III: Revenge of the Sith</Link>
+              </NavText>
             </Nav>
 
             <Nav id="Episode IV">
-              <NavText> Episode IV: A New Hope </NavText>
+              <NavText>
+                <Link to="/ep4"> Episode IV: A New Hope</Link>
+              </NavText>
             </Nav>
 
             <Nav id="Episode V">
-              <NavText> Episode V: The Empire Strikes Back </NavText>
+              <NavText>
+                <Link to="/ep5">Episode V: The Empire Strikes Back </Link>
+              </NavText>
             </Nav>
 
             <Nav id="Episode VI">
-              <NavText> Episode VI: Return of the Jedi </NavText>
+              <NavText>
+                <Link to="/ep6">Episode VI: Return of the Jedi </Link>
+              </NavText>
             </Nav>
 
             <Nav id="Episode VII">
-              <NavText> Episode VII: The Force Awakens </NavText>
+              <NavText>
+                <Link to="/ep7">Episode VII: The Force Awakens </Link>
+              </NavText>
             </Nav>
-          </SideNav>
-        </div>
+          </SideNav> */}
+
         <div className="middle">
           <div>
             <img src={this.state.picture} width="490" height="700" />
