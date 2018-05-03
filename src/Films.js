@@ -85,33 +85,36 @@ class Films extends Component {
     return (
       <div className="mainContainer">
         {/* https://reacttraining.com/react-router/web/example/url-params */}
-
-        <Menu
-          className="menu"
-          customBurgerIcon={<img src="pics/menu-icon.png" />}
-        >
-          <a id="ep1" className="menu-item" href="/ep1">
-            Episode I: The Phantom Menance
-          </a>
-          <a id="ep2" className="menu-item" href="/ep2">
-            Episode II: Attack of the Clones
-          </a>
-          <a id="ep3" className="menu-item" href="/ep3">
-            Episode III: Revenge of the Sith
-          </a>
-          <a id="ep4" className="menu-item" href="/ep4">
-            Episode IV: A New Hope
-          </a>
-          <a id="ep5" className="menu-item" href="/ep5">
-            Episode V: The Empire Strikes Back
-          </a>
-          <a id="ep6" className="menu-item" href="/ep6">
-            Episode VI: Return of the Jedi
-          </a>
-          <a id="ep7" className="menu-item" href="/ep7">
-            Episode VII: The Force Awakens
-          </a>
-        </Menu>
+        <div>
+          <Menu
+            className="leftnav"
+            customBurgerIcon={<img src="pics/menu-icon.png" />}
+          >
+            <div className="bm-menu">
+              <a id="ep1" className="menu-item" href="/ep1">
+                Episode I: The Phantom Menance
+              </a>
+              <a id="ep2" className="menu-item" href="/ep2">
+                Episode II: Attack of the Clones
+              </a>
+              <a id="ep3" className="menu-item" href="/ep3">
+                Episode III: Revenge of the Sith
+              </a>
+              <a id="ep4" className="menu-item" href="/ep4">
+                Episode IV: A New Hope
+              </a>
+              <a id="ep5" className="menu-item" href="/ep5">
+                Episode V: The Empire Strikes Back
+              </a>
+              <a id="ep6" className="menu-item" href="/ep6">
+                Episode VI: Return of the Jedi
+              </a>
+              <a id="ep7" className="menu-item" href="/ep7">
+                Episode VII: The Force Awakens
+              </a>
+            </div>
+          </Menu>
+        </div>
 
         {/* <SideNav
             highlightColor="#E91E63"
