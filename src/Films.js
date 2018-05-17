@@ -87,6 +87,11 @@ class Films extends Component {
         {/* https://reacttraining.com/react-router/web/example/url-params */}
 
         <Menu customBurgerIcon={<img src="pics/menu-icon.png" />}>
+          <a id="home" className="menu-item" href="/">
+            <span>
+              <b>Home</b>
+            </span>
+          </a>
           <a id="ep1" className="menu-item" href="/ep1">
             <span>Episode I: The Phantom Menance</span>
           </a>
@@ -109,60 +114,6 @@ class Films extends Component {
             <span>Episode VII: The Force Awakens</span>
           </a>
         </Menu>
-
-        {/* <SideNav
-            highlightColor="#E91E63"
-            highlightBgColor="#00bcd4"
-            //defaultSelected="sales"
-          >
-            <Nav id="Home">
-              <NavText>
-                <Link to="/"> Home </Link>
-              </NavText>
-            </Nav>
-
-            <Nav id="Episode I">
-              <NavText>
-                <Link to="/ep1">Episode I: The Phantom Menance</Link>
-              </NavText>
-            </Nav>
-
-            <Nav id="Episode II">
-              <NavText>
-                <Link to="/ep2">Episode II: Attack of the Clones </Link>
-              </NavText>
-            </Nav>
-
-            <Nav id="Episode III">
-              <NavText>
-                <Link to="/ep3">Episode III: Revenge of the Sith</Link>
-              </NavText>
-            </Nav>
-
-            <Nav id="Episode IV">
-              <NavText>
-                <Link to="/ep4"> Episode IV: A New Hope</Link>
-              </NavText>
-            </Nav>
-
-            <Nav id="Episode V">
-              <NavText>
-                <Link to="/ep5">Episode V: The Empire Strikes Back </Link>
-              </NavText>
-            </Nav>
-
-            <Nav id="Episode VI">
-              <NavText>
-                <Link to="/ep6">Episode VI: Return of the Jedi </Link>
-              </NavText>
-            </Nav>
-
-            <Nav id="Episode VII">
-              <NavText>
-                <Link to="/ep7">Episode VII: The Force Awakens </Link>
-              </NavText>
-            </Nav>
-          </SideNav> */}
 
         <div className="middle">
           <div>
