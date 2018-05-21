@@ -78,7 +78,6 @@ const Home = () => (
       </Link>
     </div>
 
-    <div className="grid-item" />
     <div className="grid-item">
       <Link to="/ep7">
         <button
