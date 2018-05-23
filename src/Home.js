@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => (
-  <div className="grid-container">
-    <div className="grid-item">
+  <div className="flex-container">
+    <div className="flex-item">
       <Link to="/ep1">
         <button className="buttonformat" title="Learn More" color="#841584">
           {" "}
@@ -12,7 +12,7 @@ const Home = () => (
       </Link>
     </div>
 
-    <div className="grid-item">
+    <div className="flex-item">
       <Link to="/ep2">
         <button
           className="buttonformat"
@@ -26,7 +26,7 @@ const Home = () => (
       </Link>
     </div>
 
-    <div className="grid-item">
+    <div className="flex-item">
       <Link to="/ep3">
         <button
           className="buttonformat"
@@ -39,7 +39,7 @@ const Home = () => (
       </Link>
     </div>
 
-    <div className="grid-item">
+    <div className="flex-item">
       <Link to="/ep4">
         <button
           className="buttonformat"
@@ -52,7 +52,7 @@ const Home = () => (
       </Link>
     </div>
 
-    <div className="grid-item">
+    <div className="flex-item">
       <Link to="/ep5">
         <button
           className="buttonformat"
@@ -65,7 +65,7 @@ const Home = () => (
       </Link>
     </div>
 
-    <div className="grid-item">
+    <div className="flex-item">
       <Link to="/ep6">
         <button
           className="buttonformat"
@@ -78,7 +78,7 @@ const Home = () => (
       </Link>
     </div>
 
-    <div className="grid-item">
+    <div className="flex-item">
       <Link to="/ep7">
         <button
           className="buttonformat"
