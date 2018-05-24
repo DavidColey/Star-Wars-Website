@@ -6,9 +6,8 @@ const Home = () => (
     <div className="flex-item">
       <Link to="/ep1">
         <button className="buttonformat" title="Learn More" color="#841584">
-          {" "}
           Episode I: The Phantom Menance
-        </button>{" "}
+        </button>
       </Link>
     </div>
 
