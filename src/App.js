@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+import logo from "./pics/coollogo_com-19600441.png";
 import "./App.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import Films from "./Films";
 
@@ -15,6 +15,12 @@ class App extends Component {
 
     return (
       <div className="App">
+        <div className="App-header">
+          <a href="/">
+            <img src={logo} className="App-logo" alt="logo" />
+          </a>
+        </div>
+
         <Router>
           <div>
             <Route exact path="/:movieId" component={Films} />
