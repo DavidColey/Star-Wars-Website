@@ -1,15 +1,18 @@
 .App {
   text-align: center;
+  background-image: url("pics/missions_bg_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  /* background-color: #000000; */
+  /* background-image: url("pics/m104_stargate.jpg"); */
+  height: 75px;
   padding: 20px;
   color: white;
 }
@@ -50,6 +53,11 @@
   justify-content: center;
 }
 
+/* .film-logo {
+  width: 7px;
+  height: 3px;
+} */
+
 .flex-item {
   display: inline-block;
   padding: 5px;
@@ -62,49 +70,7 @@
   font-size: 3em;
   text-align: center;
 }
-/* 
-.flex-item.one {
-  font-size: 30px;
-  order: 1;
-  flex-grow: 2;
-}
 
-.flex-item.two {
-  font-size: 30px;
-  order: 2;
-  flex-grow: 2;
-}
-
-.flex-item.three {
-  font-size: 30px;
-  order: 3;
-  flex-grow: 2;
-}
-
-.flex-item.four {
-  font-size: 30px;
-  order: 4;
-  flex-grow: 2;
-}
-
-.flex-item.five {
-  font-size: 30px;
-  order: 5;
-  flex-grow: 2;
-}
-
-.flex-item.six {
-  font-size: 30px;
-  order: 6;
-  flex-grow: 2;
-}
-
-.flex-item.seven {
-  font-size: 30px;
-  order: 7;
-  flex-grow: 2;
-}
- */
 .grid-item button {
   height: 50px;
   width: 50px;
