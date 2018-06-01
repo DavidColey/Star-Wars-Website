@@ -10,6 +10,7 @@ import ep4 from "./pics/Episode IV.jpg";
 import ep5 from "./pics/Episode V.jpg";
 import ep6 from "./pics/Episode VI.jpg";
 import ep7 from "./pics/Episode VII.jpg";
+import SlideNav from "./SlideNav.jsx";
 
 /* function image() {
   return <img src={"../src/pics/demo.jpg"} width="640" height="360" />;
@@ -85,8 +86,9 @@ class Films extends Component {
     return (
       <div className="mainContainer">
         {/* https://reacttraining.com/react-router/web/example/url-params */}
+        <SlideNav {...this.props} />
 
-        <Menu customBurgerIcon={<img src="pics/menu-icon.png" />}>
+        {/* <Menu customBurgerIcon={<img src="pics/menu-icon.png" />}>
           <a id="home" className="menu-item" href="/">
             <span>
               <b>Home</b>
@@ -113,7 +115,7 @@ class Films extends Component {
           <a id="ep7" className="menu-item" href="/ep7">
             <span>Episode VII: The Force Awakens</span>
           </a>
-        </Menu>
+        </Menu> */}
 
         <div className="middle">
           <div>
