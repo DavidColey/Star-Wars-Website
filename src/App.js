@@ -4,7 +4,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import Films from "./Films";
-
+import SlideNav from "./SlideNav.jsx";
 //import { Button } from 'react-native';
 
 class App extends Component {
@@ -15,6 +15,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        <SlideNav {...this.props} />
         <div className="App-header">
           <a href="/">
             <img src={logo} className="App-logo" alt="logo" />
