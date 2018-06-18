@@ -97,33 +97,6 @@ class Films extends Component {
             {/* <p>{this.props.match.params.movieId}</p> */}
           </div>
         </div>
-        <div className="rightnav">
-          <SideNav
-            highlightColor="#E91E63"
-            highlightBgColor="#00bcd4"
-            defaultSelected="sales"
-          >
-            <Nav id="Characters">
-              <NavText> Characters </NavText>
-            </Nav>
-
-            <Nav id="Spacships">
-              <NavText> Spaceships </NavText>
-            </Nav>
-
-            <Nav id="Vehicles">
-              <NavText> Vehicles </NavText>
-            </Nav>
-
-            <Nav id="Planets">
-              <NavText> Planets </NavText>
-            </Nav>
-
-            <Nav id="Species">
-              <NavText> Species </NavText>
-            </Nav>
-          </SideNav>
-        </div>
       </div>
     );
   }

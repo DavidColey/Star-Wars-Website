@@ -34,3 +34,15 @@
   display: block;
   outline: medium;
 }
+
+.slidenav-text {
+  font-family: "Arial Black", Arial, sans-serif;
+}
+
+.slidenav-text:hover {
+  background-color: yellow;
+}
+
+.triggerClassName {
+  font-family: "Arial Black", Arial, sans-serif;
+}

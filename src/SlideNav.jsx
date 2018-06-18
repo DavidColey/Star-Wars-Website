@@ -7,34 +7,51 @@ export default class SlideNav extends React.Component {
   render() {
     return (
       <Menu customBurgerIcon={<img src="pics/menu-icon.png" />}>
-        {/* <Collapsible trigger="Start Here"> */}
-        <a id="home" href="/">
-          <span>
-            <b>Home</b>
-          </span>
-        </a>
-        <a id="ep1" href="/ep1">
-          <span>Episode I: The Phantom Menance</span>
-        </a>
-        <a id="ep2" href="/ep2">
-          <span>Episode II: Attack of the Clones</span>
-        </a>
-        <a id="ep3" href="/ep3">
-          <span>Episode III: Revenge of the Sith</span>
-        </a>
-        <a id="ep4" href="/ep4">
-          <span>Episode IV: A New Hope</span>
-        </a>
-        <a id="ep5" href="/ep5">
-          <span>Episode V: The Empire Strikes Back</span>
-        </a>
-        <a id="ep6" href="/ep6">
-          <span>Episode VI: Return of the Jedi</span>
-        </a>
-        <a id="ep7" href="/ep7">
-          <span>Episode VII: The Force Awakens</span>
-        </a>
-        {/*  </Collapsible> */}
+        <Collapsible trigger="Episodes">
+          <a id="home" href="/">
+            <p className="slidenav-text">
+              <b>Home</b>
+            </p>
+          </a>
+          <a id="ep1" href="/ep1">
+            <p className="slidenav-text">Episode I: The Phantom Menance</p>
+          </a>
+          <a id="ep2" href="/ep2">
+            <p className="slidenav-text">Episode II: Attack of the Clones</p>
+          </a>
+          <a id="ep3" href="/ep3">
+            <p className="slidenav-text">Episode III: Revenge of the Sith</p>
+          </a>
+          <a id="ep4" href="/ep4">
+            <p className="slidenav-text">Episode IV: A New Hope</p>
+          </a>
+          <a id="ep5" href="/ep5">
+            <p className="slidenav-text">Episode V: The Empire Strikes Back</p>
+          </a>
+          <a id="ep6" href="/ep6">
+            <p className="slidenav-text">Episode VI: Return of the Jedi</p>
+          </a>
+          <a id="ep7" href="/ep7">
+            <p className="slidenav-text">Episode VII: The Force Awakens</p>
+          </a>
+        </Collapsible>
+        <Collapsible trigger="Movie Data">
+          <a id="ep1" href="/">
+            <p className="slidenav-text">Characters</p>
+          </a>
+          <a id="ep2" href="/">
+            <p className="slidenav-text">Spaceships</p>
+          </a>
+          <a id="ep3" href="/">
+            <p className="slidenav-text">Vehicles</p>
+          </a>
+          <a id="ep4" href="/">
+            <p className="slidenav-text">Planets</p>
+          </a>
+          <a id="ep5" href="/">
+            <p className="slidenav-text">Species</p>
+          </a>
+        </Collapsible>
       </Menu>
     );
   }
