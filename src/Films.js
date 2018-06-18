@@ -10,6 +10,7 @@ import ep4 from "./pics/Episode IV.jpg";
 import ep5 from "./pics/Episode V.jpg";
 import ep6 from "./pics/Episode VI.jpg";
 import ep7 from "./pics/Episode VII.jpg";
+import SlideNav from "./SlideNav.jsx";
 
 /* function image() {
   return <img src={"../src/pics/demo.jpg"} width="640" height="360" />;
@@ -85,35 +86,7 @@ class Films extends Component {
     return (
       <div className="mainContainer">
         {/* https://reacttraining.com/react-router/web/example/url-params */}
-
-        <Menu customBurgerIcon={<img src="pics/menu-icon.png" />}>
-          <a id="home" className="menu-item" href="/">
-            <span>
-              <b>Home</b>
-            </span>
-          </a>
-          <a id="ep1" className="menu-item" href="/ep1">
-            <span>Episode I: The Phantom Menance</span>
-          </a>
-          <a id="ep2" className="menu-item" href="/ep2">
-            <span>Episode II: Attack of the Clones</span>
-          </a>
-          <a id="ep3" className="menu-item" href="/ep3">
-            <span>Episode III: Revenge of the Sith</span>
-          </a>
-          <a id="ep4" className="menu-item" href="/ep4">
-            <span>Episode IV: A New Hope</span>
-          </a>
-          <a id="ep5" className="menu-item" href="/ep5">
-            <span>Episode V: The Empire Strikes Back</span>
-          </a>
-          <a id="ep6" className="menu-item" href="/ep6">
-            <span>Episode VI: Return of the Jedi</span>
-          </a>
-          <a id="ep7" className="menu-item" href="/ep7">
-            <span>Episode VII: The Force Awakens</span>
-          </a>
-        </Menu>
+        {/* <SlideNav {...this.props} /> */}
 
         <div className="middle">
           <div>
@@ -123,33 +96,6 @@ class Films extends Component {
             <text>{this.state.films && this.state.films.opening_crawl}</text>
             {/* <p>{this.props.match.params.movieId}</p> */}
           </div>
-        </div>
-        <div className="rightnav">
-          <SideNav
-            highlightColor="#E91E63"
-            highlightBgColor="#00bcd4"
-            defaultSelected="sales"
-          >
-            <Nav id="Characters">
-              <NavText> Characters </NavText>
-            </Nav>
-
-            <Nav id="Spacships">
-              <NavText> Spaceships </NavText>
-            </Nav>
-
-            <Nav id="Vehicles">
-              <NavText> Vehicles </NavText>
-            </Nav>
-
-            <Nav id="Planets">
-              <NavText> Planets </NavText>
-            </Nav>
-
-            <Nav id="Species">
-              <NavText> Species </NavText>
-            </Nav>
-          </SideNav>
         </div>
       </div>
     );
